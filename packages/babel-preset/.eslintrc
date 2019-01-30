@@ -1,0 +1,6 @@
+{
+  "extends": "@sweetlikepete",
+  "rules": {
+    "no-process-env": "off"
+  }
+}

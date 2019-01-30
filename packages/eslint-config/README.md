@@ -41,7 +41,7 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+ and
 
 3. Add `"extends": "@sweetlikepete"` to your .eslintrc.
 
-## Improving this config
+## Maintenance
 
 You can run tests with `npm test`.
 

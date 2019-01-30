@@ -1,15 +1,10 @@
 
 {
-  "plugins": [
-    "add-module-exports"
-  ],
   "presets": [
     [
-      "@babel/preset-env",
+      "@sweetlikepete/babel-preset",
       {
-        "targets": {
-          "node": 4
-        }
+        "addModuleExports": true
       }
     ]
   ]
