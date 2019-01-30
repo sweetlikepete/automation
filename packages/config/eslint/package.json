@@ -1,0 +1,77 @@
+{
+  "name": "@sweetlikepete/eslint-config",
+  "version": "1.0.2",
+  "description": "Shared config for eslint",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "babel src --config-file --out-dir lib",
+    "clean": "rm -rf lib",
+    "lint": "eslint src && eslint-find-rules lib/index.js --unused",
+    "prebuild": "npm run clean",
+    "prelint": "npm run build",
+    "prepublish": "npm run lint"
+  },
+  "engines": {
+    "node": ">= 4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sweetlikepete/automation"
+  },
+  "author": "Peter Bodechtel (https://www.sweetlikepete.com)",
+  "contributors": [
+    {
+      "name": "Peter Bodechtel",
+      "url": "https://www.sweetlikepete.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sweetlikepete/automation/issues"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "sweetlikepete",
+    "@sweetlikepete"
+  ],
+  "homepage": "https://github.com/sweetlikepete/automation/packages/config/eslint#readme",
+  "peerDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-plugin-array-func": "^3.1.2",
+    "eslint-plugin-compat": "^2.6.3",
+    "eslint-plugin-eslint-comments": "^3.0.1",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-optimize-regex": "^1.1.6",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-unicorn": "^7.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "babel-plugin-add-module-exports": "^1.0.0",
+    "eslint": "^5.12.1",
+    "eslint-find-rules": "^3.3.1",
+    "eslint-plugin-array-func": "^3.1.2",
+    "eslint-plugin-compat": "^2.6.3",
+    "eslint-plugin-eslint-comments": "^3.0.1",
+    "eslint-plugin-import": "^2.15.0",
+    "eslint-plugin-no-loops": "^0.3.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-optimize-regex": "^1.1.6",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-unicorn": "^7.1.0",
+    "renamer": "^1.1.1"
+  },
+  "dependencies": {
+    "confusing-browser-globals": "^1.0.5"
+  }
+}
