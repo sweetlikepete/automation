@@ -8,7 +8,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -342,5 +341,4 @@ export default {
         "react/void-dom-elements-no-children": "error"
 
     }
-
 };

@@ -9,7 +9,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -55,5 +54,4 @@ export default {
         "eslint-comments/no-unused-enable": "error"
 
     }
-
 };

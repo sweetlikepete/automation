@@ -6,10 +6,12 @@
   "scripts": {
     "build": "babel src --config-file --out-dir lib",
     "clean": "rm -rf lib",
-    "lint": "eslint src && eslint-find-rules lib/index.js --unused",
+    "lint": "eslint src test && eslint-find-rules lib/index.js --unused",
     "prebuild": "npm run clean",
     "prelint": "npm run build",
-    "prepublish": "npm run lint"
+    "prepublish": "npm run test",
+    "pretest": "npm run lint",
+    "test": "babel-tape-runner ./test/*.js"
   },
   "engines": {
     "node": ">= 4"
@@ -56,6 +58,7 @@
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.3.1",
     "babel-plugin-add-module-exports": "^1.0.0",
+    "babel-tape-runner": "^3.0.0",
     "eslint": "^5.12.1",
     "eslint-find-rules": "^3.3.1",
     "eslint-plugin-array-func": "^3.1.2",
@@ -69,7 +72,8 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-unicorn": "^7.1.0",
-    "renamer": "^1.1.1"
+    "renamer": "^1.1.1",
+    "tape": "^4.9.2"
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.5"

@@ -8,7 +8,20 @@
 
 
 export default {
-
+    env: {
+        node: true
+    },
+    globals: {
+        __dirname: false,
+        __filename: false,
+        Buffer: false,
+        global: false,
+        module: false,
+        process: false,
+        Promise: false,
+        require: false,
+        System: false
+    },
     rules: {
 
         /*
@@ -89,5 +102,4 @@ export default {
         "no-sync": "error"
 
     }
-
 };

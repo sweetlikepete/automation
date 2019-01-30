@@ -8,7 +8,7 @@
 
 
 export default {
-
+    plugins: ["security"],
     rules: {
 
         /*
@@ -120,5 +120,4 @@ export default {
         "security/detect-unsafe-regex": "error"
 
     }
-
 };

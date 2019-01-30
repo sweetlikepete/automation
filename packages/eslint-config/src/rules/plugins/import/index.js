@@ -9,12 +9,11 @@
 
 
 export default {
-
     extends: [
         "./module-systems",
         "./static-analysis",
         "./style",
         "./warnings"
-    ].map(require.resolve)
-
+    ].map(require.resolve),
+    plugins: ["import"]
 };

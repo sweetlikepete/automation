@@ -8,7 +8,7 @@
 
 
 export default {
-
+    plugins: ["optimize-regex"],
     rules: {
 
         /*
@@ -19,5 +19,4 @@ export default {
         "optimize-regex/optimize-regex": "error"
 
     }
-
 };

@@ -26,7 +26,6 @@ const tryExtensions = [
 
 
 export default {
-
     rules: {
 
         /*
@@ -105,7 +104,8 @@ export default {
         "node/no-unsupported-features/es-syntax": [
             "error",
             {
-                ignores: ["modules"]
+                ignores: ["modules"],
+                version: ">= 10.15.1"
             }
         ],
 
@@ -131,5 +131,4 @@ export default {
         "node/shebang": "error"
 
     }
-
 };

@@ -8,7 +8,7 @@
 
 
 export default {
-
+    plugins: ["unicorn"],
     rules: {
 
         /*
@@ -222,5 +222,4 @@ export default {
         "unicorn/throw-new-error": "error"
 
     }
-
 };

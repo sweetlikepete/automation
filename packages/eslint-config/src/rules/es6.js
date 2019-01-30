@@ -8,7 +8,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -214,14 +213,12 @@ export default {
         /*
          * Enforce sorted import declarations within modules
          *
+         * Off for now because we handle this with 'import/order' because it has
+         * more fine grained control
+         *
          * https://eslint.org/docs/rules/sort-imports
          */
-        "sort-imports": [
-            "error",
-            {
-                ignoreCase: true
-            }
-        ],
+        "sort-imports": "off",
 
         /*
          * Require symbol descriptions
@@ -248,5 +245,4 @@ export default {
         "yield-star-spacing": "error"
 
     }
-
 };

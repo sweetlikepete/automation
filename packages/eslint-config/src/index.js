@@ -1,9 +1,6 @@
 
 
 export default {
-    env: {
-        browser: true
-    },
     extends: [
         "./rules/plugins/array-func",
         "./rules/plugins/compat",
@@ -24,37 +21,8 @@ export default {
         "./rules/style",
         "./rules/variables"
     ].map(require.resolve),
-    globals: {
-        __dirname: false,
-        __filename: false,
-        Buffer: false,
-        global: false,
-        module: false,
-        process: false,
-        Promise: false,
-        require: false,
-        System: false
-    },
     parserOptions: {
         ecmaVersion: 2018,
         sourceType: "module"
-    },
-    plugins: [
-        "array-func",
-        "compat",
-        "eslint-comments",
-        "import",
-        "no-loops",
-        "node",
-        "optimize-regex",
-        "promise",
-        "react",
-        "security",
-        "unicorn"
-    ],
-    settings: {
-        react: {
-            version: "latest"
-        }
     }
 };

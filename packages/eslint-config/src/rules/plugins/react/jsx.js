@@ -8,7 +8,6 @@
 
 
 export default {
-
     rules: {
 
 
@@ -253,5 +252,4 @@ export default {
         "react/jsx-wrap-multilines": "error"
 
     }
-
 };

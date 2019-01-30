@@ -9,7 +9,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -55,5 +54,4 @@ export default {
         "import/no-named-as-default-member": "error"
 
     }
-
 };

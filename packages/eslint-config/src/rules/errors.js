@@ -8,7 +8,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -273,5 +272,4 @@ export default {
         "valid-typeof": "error"
 
     }
-
 };

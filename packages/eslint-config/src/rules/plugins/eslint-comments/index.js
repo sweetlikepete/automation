@@ -9,10 +9,9 @@
 
 
 export default {
-
     extends: [
         "./best-practices",
         "./style"
-    ].map(require.resolve)
-
+    ].map(require.resolve),
+    plugins: ["eslint-comments"]
 };

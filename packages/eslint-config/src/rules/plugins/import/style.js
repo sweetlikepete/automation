@@ -9,7 +9,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -143,7 +142,20 @@ export default {
          *
          * https://github.com/benmosher/eslint-plugin-import/blob/HEAD/docs/rules/order.md
          */
-        "import/order": "error",
+        "import/order": [
+            "error",
+            {
+                groups: [
+                    "builtin",
+                    "external",
+                    "internal",
+                    "sibling",
+                    "parent",
+                    "index"
+                ],
+                "newlines-between": "always"
+            }
+        ],
 
         /*
          * Prefer a default export if module exports a single name
@@ -154,7 +166,5 @@ export default {
          */
         "import/prefer-default-export": "off"
 
-
     }
-
 };

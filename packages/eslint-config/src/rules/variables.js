@@ -11,7 +11,6 @@ import confusingBrowserGlobals from "confusing-browser-globals";
 
 
 export default {
-
     rules: {
 
 
@@ -104,5 +103,4 @@ export default {
         "no-use-before-define": "error"
 
     }
-
 };

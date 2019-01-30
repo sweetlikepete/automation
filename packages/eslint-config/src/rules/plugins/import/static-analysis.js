@@ -9,7 +9,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -108,5 +107,4 @@ export default {
         "import/no-webpack-loader-syntax": "error"
 
     }
-
 };

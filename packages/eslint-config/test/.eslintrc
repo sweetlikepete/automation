@@ -1,0 +1,12 @@
+{
+  "extends": "./../lib/index.js",
+  "rules": {
+    "global-require": "off",
+    "import/no-dynamic-require": "off",
+    "import/unambiguous": "off",
+    "no-sync": "off",
+    "node/no-unpublished-import": "off",
+    "security/detect-non-literal-fs-filename": "off",
+    "security/detect-non-literal-require": "off"
+  }
+}

@@ -8,7 +8,7 @@
 
 
 export default {
-
+    plugins: ["compat"],
     rules: {
 
         /*
@@ -19,5 +19,4 @@ export default {
         "compat/compat": "error"
 
     }
-
 };

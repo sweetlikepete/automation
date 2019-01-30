@@ -8,7 +8,7 @@
 
 
 export default {
-
+    plugins: ["array-func"],
     rules: {
 
         /*
@@ -61,5 +61,4 @@ export default {
         "array-func/prefer-flat-map": "error"
 
     }
-
 };

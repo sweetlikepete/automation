@@ -8,11 +8,10 @@
 
 
 export default {
-
     extends: [
         "./best-practices",
         "./errors",
         "./style"
-    ].map(require.resolve)
-
+    ].map(require.resolve),
+    plugins: ["node"]
 };

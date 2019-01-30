@@ -8,7 +8,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -623,5 +622,4 @@ export default {
         yoda: "error"
 
     }
-
 };

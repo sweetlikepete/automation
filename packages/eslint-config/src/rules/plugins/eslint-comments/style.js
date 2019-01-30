@@ -9,7 +9,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -29,5 +28,4 @@ export default {
         "eslint-comments/no-use": "off"
 
     }
-
 };

@@ -8,7 +8,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -19,5 +18,4 @@ export default {
         "node/no-deprecated-api": "error"
 
     }
-
 };

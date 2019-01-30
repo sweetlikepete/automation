@@ -8,7 +8,7 @@
 
 
 export default {
-
+    plugins: ["promise"],
     rules: {
 
         /*
@@ -118,5 +118,4 @@ export default {
         "promise/valid-params": "error"
 
     }
-
 };

@@ -8,7 +8,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -873,5 +872,4 @@ export default {
         "wrap-regex": "error"
 
     }
-
 };

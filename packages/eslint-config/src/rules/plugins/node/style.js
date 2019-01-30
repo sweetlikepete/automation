@@ -8,7 +8,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -71,5 +70,4 @@ export default {
          */
         "node/prefer-global/url-search-params": "error"
     }
-
 };

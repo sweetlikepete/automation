@@ -9,7 +9,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -43,5 +42,4 @@ export default {
         "import/unambiguous": "error"
 
     }
-
 };

@@ -8,7 +8,7 @@
 
 
 export default {
-
+    plugins: ["no-loops"],
     rules: {
 
         /*
@@ -19,5 +19,4 @@ export default {
         "no-loops/no-loops": "error"
 
     }
-
 };

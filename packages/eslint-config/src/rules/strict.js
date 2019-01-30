@@ -8,7 +8,6 @@
 
 
 export default {
-
     rules: {
 
         /*
@@ -22,5 +21,4 @@ export default {
         ]
 
     }
-
 };
