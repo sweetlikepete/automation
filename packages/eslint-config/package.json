@@ -1,16 +1,13 @@
 {
   "name": "@sweetlikepete/eslint-config",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Shared config for eslint",
   "main": "lib/index.js",
   "scripts": {
-    "build": "babel src --config-file --out-dir lib",
-    "clean": "rm -rf lib",
+    "build": "rm -rf lib && babel src --config-file --out-dir lib",
     "lint": "eslint src test && eslint-find-rules lib/index.js --unused",
-    "prebuild": "npm run clean",
-    "prelint": "npm run prepare",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm run lint",
+    "prelint": "npm run build",
+    "prepublishOnly": "npm run test",
     "pretest": "npm run lint",
     "test": "babel-tape-runner ./test/*.js"
   },
