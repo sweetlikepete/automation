@@ -1,6 +1,6 @@
 {
   "name": "@sweetlikepete/eslint-config",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Shared config for eslint",
   "main": "lib/index.js",
   "scripts": {
@@ -36,7 +36,7 @@
     "sweetlikepete",
     "@sweetlikepete"
   ],
-  "homepage": "https://github.com/sweetlikepete/automation/packages/config/eslint#readme",
+  "homepage": "https://github.com/sweetlikepete/automation/tree/master/packages/eslint-config#readme",
   "peerDependencies": {
     "eslint": "^5.12.1",
     "eslint-plugin-array-func": "^3.1.2",
