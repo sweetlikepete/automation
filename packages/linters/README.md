@@ -1,0 +1,2 @@
+# linters
+Collection of linters
