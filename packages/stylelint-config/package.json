@@ -1,0 +1,20 @@
+{
+  "name": "@sweetlikepete/stylelint-config",
+  "version": "1.0.0",
+  "description": "",
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "rm -rf lib && babel src --config-file --out-dir lib",
+    "lint": "eslint src",
+    "prelint": "npm run build",
+    "prepublishOnly": "npm run lint"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.2.2",
+    "@sweetlikepete/babel-preset": "^1.0.0",
+    "@sweetlikepete/linters": "^1.0.2"
+  }
+}
