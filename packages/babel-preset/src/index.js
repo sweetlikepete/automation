@@ -8,15 +8,11 @@ export default declare((api, options) => {
     // See docs about api at https://babeljs.io/docs/en/config-files#apicache
     api.assertVersion("^7.2.0");
 
-    let {
+    const {
+        addModuleExports = false,
         modules,
         targets
     } = options;
-
-    modules = modules === false ? false : "auto";
-    targets = targets || {
-        node: 4
-    };
 
     if(typeof modules !== "undefined" && typeof modules !== "boolean" && modules !== "auto"){
         throw new TypeError("@sweetlikepete/babel-preset-node only accepts `true`, `false`, or `\"auto\"` as the value of the \"modules\" option");
@@ -26,7 +22,7 @@ export default declare((api, options) => {
     const development = typeof options.development === "boolean" ? options.development : api.cache.using(() => process.env.NODE_ENV === "development");
 
     const config = {
-        plugins: [targets.node > 0 ? "add-module-exports" : null].filter(Boolean),
+        plugins: [addModuleExports ? "add-module-exports" : null].filter(Boolean),
         presets: [
             [
                 "@babel/preset-env",
