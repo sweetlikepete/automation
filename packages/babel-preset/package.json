@@ -5,9 +5,11 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && babel src --config-file --out-dir lib",
-    "lint": "eslint src",
+    "lint": "eslint src test",
     "prelint": "npm run build",
-    "prepublishOnly": "npm run lint"
+    "prepublishOnly": "npm run test",
+    "pretest": "npm run lint",
+    "test": "babel-tape-runner ./test/*.js"
   },
   "repository": {
     "type": "git",
@@ -31,6 +33,8 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
-    "@sweetlikepete/linters": "^1.0.2"
+    "@sweetlikepete/linters": "^1.0.2",
+    "babel-tape-runner": "^3.0.0",
+    "tape": "^4.9.2"
   }
 }
