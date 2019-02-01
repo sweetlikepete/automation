@@ -2,7 +2,7 @@
 
 [![npm version](https://badge.fury.io/js/%40sweetlikepete%2Feslint-config.svg)](https://badge.fury.io/js/%40sweetlikepete%2Feslint-config)
 
-This package provides an shared config for eslint and several of its plugins.
+This package provides a shared config for eslint and several of its plugins.
 
 ## Usage
 

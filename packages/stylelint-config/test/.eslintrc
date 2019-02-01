@@ -1,5 +1,5 @@
 {
-  "extends": "./../lib/index.js",
+  "extends": "@sweetlikepete",
   "rules": {
     "global-require": "off",
     "import/no-dynamic-require": "off",

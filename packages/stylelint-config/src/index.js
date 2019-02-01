@@ -7,5 +7,9 @@ export default {
         "./rules/errors",
         "./rules/features",
         "./rules/style"
-    ].map(require.resolve)
+    ].map(require.resolve),
+    plugins: [
+        "stylelint-order",
+        "stylelint-scss"
+    ]
 };

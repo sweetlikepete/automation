@@ -11,7 +11,7 @@ export default {
         "./function",
         "./general",
         "./keyframe-declaration",
-        "./media-features",
+        "./media-feature",
         "./property",
         "./selector",
         "./string",

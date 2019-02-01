@@ -1,5 +1,12 @@
 
 
+/*
+ * SCSS specific linting rules.
+ *
+ * https://github.com/kristerkari/stylelint-scss
+ */
+
+
 export default {
     extends: [
         "./comment",

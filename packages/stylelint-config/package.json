@@ -5,16 +5,53 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && babel src --config-file --out-dir lib",
-    "lint": "eslint src",
+    "lint": "eslint src test",
     "prelint": "npm run build",
-    "prepublishOnly": "npm run lint"
+    "prepublishOnly": "npm run lint",
+    "pretest": "npm run lint",
+    "test": "stylelint test/*.scss && babel-tape-runner ./test/*.js"
   },
-  "author": "",
-  "license": "ISC",
+  "engines": {
+    "node": ">= 4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sweetlikepete/automation"
+  },
+  "author": "Peter Bodechtel (https://www.sweetlikepete.com)",
+  "contributors": [
+    {
+      "name": "Peter Bodechtel",
+      "url": "https://www.sweetlikepete.com"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sweetlikepete/automation/issues"
+  },
+  "keywords": [
+    "stylelint",
+    "stylelintconfig",
+    "stylelint-config",
+    "sweetlikepete",
+    "@sweetlikepete"
+  ],
+  "homepage": "https://github.com/sweetlikepete/automation/tree/master/packages/stylelint-config#readme",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@sweetlikepete/babel-preset": "^1.0.0",
-    "@sweetlikepete/linters": "^1.0.2"
+    "@sweetlikepete/linters": "^1.0.2",
+    "babel-tape-runner": "^3.0.0",
+    "stylelint": "^9.10.1",
+    "stylelint-cli": "^1.0.0",
+    "stylelint-order": "^2.0.0",
+    "stylelint-scss": "^3.5.1",
+    "tape": "^4.9.2"
+  },
+  "peerDependencies": {
+    "stylelint": "^9.10.1",
+    "stylelint-order": "^2.0.0",
+    "stylelint-scss": "^3.5.1"
   }
 }

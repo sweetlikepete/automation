@@ -48,7 +48,7 @@ export default {
          *
          * https://stylelint.io/user-guide/rules/no-empty-first-line/
          */
-        "no-empty-first-line": false,
+        "no-empty-first-line": null,
 
         /*
          * Disallow end-of-line whitespace (Autofixable).
