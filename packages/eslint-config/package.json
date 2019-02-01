@@ -54,7 +54,7 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
-    "@sweetlikepete/babel-preset": "^1.0.0",
+    "@sweetlikepete/babel-preset": "^1.0.1",
     "babel-tape-runner": "^3.0.0",
     "eslint": "^5.12.1",
     "eslint-find-rules": "^3.3.1",
