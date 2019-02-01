@@ -78,7 +78,7 @@ Outputs the targets/plugins used and the version specified in plugin data versio
 
 ### development
 
-#### `boolean, defaults to false.
+#### `boolean, defaults to false.`
 
 Toggles plugins that aid in development, such as @babel/plugin-transform-react-jsx-self and
 @babel/plugin-transform-react-jsx-source.
