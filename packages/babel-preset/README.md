@@ -34,7 +34,7 @@ Our default export contains all of our babel plugins and presets. It requires th
 
 ### targets
 
-### `string | Array<string> | { [string]: string }, defaults to {}.`
+#### `string | Array<string> | { [string]: string }, defaults to {}.`
 
 Describes the environments you support/target for your project.
 
@@ -64,21 +64,21 @@ Sidenote, this uses @babel/preset-env under the hood, so if no targets are speci
 
 ### addModuleExports
 
-### `boolean, defaults to false.`
+#### `boolean, defaults to false.`
 
 Enables the export default module.exports that was turned off in Babel 6.
 
 
 ### debug
 
-### `boolean, defaults to false.`
+#### `boolean, defaults to false.`
 
 Outputs the targets/plugins used and the version specified in plugin data version to console.log.
 
 
 ### development
 
-### `boolean, defaults to false.
+#### `boolean, defaults to false.
 
 Toggles plugins that aid in development, such as @babel/plugin-transform-react-jsx-self and
 @babel/plugin-transform-react-jsx-source.
