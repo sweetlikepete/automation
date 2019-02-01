@@ -1,6 +1,6 @@
 {
   "name": "@sweetlikepete/eslint-config",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Shared config for eslint",
   "main": "lib/index.js",
   "scripts": {
@@ -54,7 +54,7 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
-    "@sweetlikepete/babel-preset": "^1.0.1",
+    "@sweetlikepete/babel-preset": "^1.0.2",
     "babel-tape-runner": "^3.0.0",
     "eslint": "^5.12.1",
     "eslint-find-rules": "^3.3.1",
