@@ -11,6 +11,7 @@ export default declare((api, options) => {
     const {
         addModuleExports = false,
         modules,
+        shebang = false,
         targets
     } = options;
 
@@ -22,7 +23,16 @@ export default declare((api, options) => {
     const development = typeof options.development === "boolean" ? options.development : api.cache.using(() => process.env.NODE_ENV === "development");
 
     const config = {
-        plugins: [addModuleExports ? "add-module-exports" : null].filter(Boolean),
+        plugins: [
+            addModuleExports ? "add-module-exports" : null,
+            shebang ? [
+                "shebang",
+                {
+                    force: true,
+                    replacement: "#!/usr/bin/env node"
+                }
+            ] : null
+        ].filter(Boolean),
         presets: [
             [
                 "@babel/preset-env",
