@@ -1,7 +1,7 @@
 {
   "name": "@sweetlikepete/stylelint-config",
-  "version": "1.0.2",
-  "description": "",
+  "version": "1.0.3",
+  "description": "Shared config for stylelint",
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && babel src --config-file --out-dir lib",
@@ -19,12 +19,6 @@
     "url": "https://github.com/sweetlikepete/automation"
   },
   "author": "Peter Bodechtel (https://www.sweetlikepete.com)",
-  "contributors": [
-    {
-      "name": "Peter Bodechtel",
-      "url": "https://www.sweetlikepete.com"
-    }
-  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/sweetlikepete/automation/issues"

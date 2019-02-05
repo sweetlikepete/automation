@@ -5,7 +5,9 @@
   "main": "lib/index.js",
   "scripts": {
     "build": "rm -rf lib && babel src --config-file --out-dir lib",
-    "lint": "eslint src test && eslint-find-rules lib/index.js --unused",
+    "lint": "eslint src test --ext .jsx,.js,.tsx,.ts",
+    "xlint": "eslint src test --ext .jsx,.js,.tsx,.ts && eslint-find-rules lib/index.js --unused",
+    "help-eslint": "eslint --help",
     "prelint": "npm run build",
     "prepublishOnly": "npm run test",
     "pretest": "npm run lint",
@@ -38,6 +40,8 @@
   ],
   "homepage": "https://github.com/sweetlikepete/automation/tree/master/packages/eslint-config#readme",
   "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^1.2.0",
+    "@typescript-eslint/parser": "^1.2.0",
     "eslint": "^5.12.1",
     "eslint-plugin-array-func": "^3.1.2",
     "eslint-plugin-compat": "^2.6.3",
@@ -49,14 +53,18 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-security": "^1.4.0",
-    "eslint-plugin-unicorn": "^7.1.0"
+    "eslint-plugin-unicorn": "^7.1.0",
+    "typescript": "^3.3.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@sweetlikepete/babel-preset": "^1.0.2",
+    "@types/node": "^10.12.21",
+    "@typescript-eslint/eslint-plugin": "^1.2.0",
+    "@typescript-eslint/parser": "^1.2.0",
     "babel-tape-runner": "^3.0.0",
-    "eslint": "^5.12.1",
+    "eslint": "^5.13.0",
     "eslint-find-rules": "^3.3.1",
     "eslint-plugin-array-func": "^3.1.2",
     "eslint-plugin-compat": "^2.6.3",
@@ -70,7 +78,8 @@
     "eslint-plugin-security": "^1.4.0",
     "eslint-plugin-unicorn": "^7.1.0",
     "renamer": "^1.1.1",
-    "tape": "^4.9.2"
+    "tape": "^4.9.2",
+    "typescript": "^3.3.1"
   },
   "dependencies": {
     "confusing-browser-globals": "^1.0.5"

@@ -7,6 +7,9 @@
  */
 
 
+import { maximumCyclomaticComplexity } from "../config";
+
+
 export default {
     rules: {
 
@@ -49,7 +52,7 @@ export default {
         complexity: [
             "error",
             {
-                max: 20
+                max: maximumCyclomaticComplexity
             }
         ],
 
@@ -286,15 +289,7 @@ export default {
                     -1,
                     0,
                     1,
-                    2,
-                    100,
-                    -100,
-                    200,
-                    301,
-                    302,
-                    404,
-                    500,
-                    1000
+                    2
                 ],
                 ignoreArrayIndexes: true
             }

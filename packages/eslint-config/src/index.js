@@ -11,6 +11,7 @@ export default {
         "./rules/plugins/optimize-regex",
         "./rules/plugins/promise",
         "./rules/plugins/react",
+        "./rules/plugins/typescript",
         "./rules/plugins/security",
         "./rules/plugins/unicorn",
         "./rules/best-practices",
@@ -25,4 +26,5 @@ export default {
         ecmaVersion: 2018,
         sourceType: "module"
     }
+
 };

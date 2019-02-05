@@ -10,7 +10,6 @@
 export default {
     rules: {
 
-
         /*
          * Enforce boolean attributes notation in JSX (fixable)
          *

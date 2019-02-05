@@ -7,6 +7,13 @@
  */
 
 
+import {
+    indentSpaces,
+    maximumFileLineCount,
+    maximumLineLength
+} from "../config";
+
+
 export default {
     rules: {
 
@@ -207,9 +214,7 @@ export default {
          */
         indent: [
             "error",
-            // This is the amount of spaces to indent
-            // eslint-disable-next-line no-magic-numbers
-            4,
+            indentSpaces,
             {
                 MemberExpression: 0,
                 SwitchCase: 1
@@ -331,7 +336,7 @@ export default {
         "max-len": [
             "error",
             {
-                code: 160
+                code: maximumLineLength
             }
         ],
 
@@ -343,7 +348,7 @@ export default {
         "max-lines": [
             "error",
             {
-                max: 1000
+                max: maximumFileLineCount
             }
         ],
 
