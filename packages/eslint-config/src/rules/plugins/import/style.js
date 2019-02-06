@@ -40,6 +40,7 @@ export default {
             "error",
             "never",
             {
+                json: "always",
                 scss: "always"
             }
         ],
