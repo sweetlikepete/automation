@@ -1,0 +1,13 @@
+
+{
+    "presets": [
+      [
+        "@sweetlikepete/babel-preset",
+        {
+          "addModuleExports": true,
+          "shebang": true
+        }
+      ]
+    ]
+  }
+

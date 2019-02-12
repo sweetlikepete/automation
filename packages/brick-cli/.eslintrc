@@ -1,0 +1,6 @@
+{
+  "extends": "@sweetlikepete",
+  "rules": {
+    "compat/compat": "off"
+  }
+}
